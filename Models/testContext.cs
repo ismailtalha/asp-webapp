@@ -20,6 +20,7 @@ namespace webapi.Models
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Student> Students { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
